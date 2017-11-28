@@ -1,18 +1,15 @@
 .container {
   display: grid
 }
-
+img{
+  width: 20%;
+}
 .theBlackest{
   background-color: black;
   color: white;
   text-align: center;
 }
 
-.theBlackestleft{
-  background-color: black;
-  color: white;
-  text-align: left;
-}
 .leftJust{
   text-align: left;
 }
@@ -24,6 +21,7 @@
   grid-column-end: span 2;
   grid-row-start: 1;
   grid-row-end: span 1;
+  padding: 10%;
 }
 .bottom{
   grid-column-start: 1;
@@ -35,7 +33,22 @@
   grid-column-start: 1;
   grid-column-end: span 2;
   grid-row-start: 4;
-  grid-row-end: span 1;
+  grid-row-end: span 2;
+  padding: 10%;
+}
+.endRight{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  text-align: right;
+}
+.endLeft{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  text-align: left;
 }
 .leftButton{
   text-align: right;
@@ -43,6 +56,7 @@
 grid-column-end: span 1;
 grid-row-start: 2;
 grid-row-end: span 1;
+padding: 10px;
 }
 .rightButton{
   text-align: left;
@@ -50,24 +64,55 @@ grid-row-end: span 1;
 grid-column-end: span 1;
 grid-row-start: 2;
 grid-row-end: span 1;
+padding: 10px;
 }
 
 .centerButton{
   background-color: green;
+  color: white;
 }
 
-a:link {
+.theBlackest a:link {
     color: grey;
+    decoration: none;
 }
 
-a:visited {
+.theBlackest a:visited {
     color: grey;
+    decoration: none;
 }
 
-a:hover {
+.theBlackest a:hover {
     color: grey;
+    decoration: underline;
 }
 
-a:active {
+.theBlackest a:active {
     color: grey;
+    decoration: none;
 }
+.top a:link {
+    color: grey;
+    decoration: none;
+}
+
+.top a:visited {
+    color: grey;
+    decoration: none;
+}
+
+.top a:hover {
+    color: white;
+    background-color: green;
+    decoration: underline;
+}
+
+.top a:active {
+    color: grey;
+    decoration: none;
+}
+@media (max-width: 900px) {
+  img{
+    width: 100%;
+  }
+ }
