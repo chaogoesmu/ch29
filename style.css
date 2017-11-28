@@ -1,0 +1,73 @@
+.container {
+  display: grid
+}
+
+.theBlackest{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.theBlackestleft{
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+.leftJust{
+  text-align: left;
+}
+.centered{
+  text-align: center;
+}
+.top{
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+.bottom{
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+}
+.theEnd{
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 4;
+  grid-row-end: span 1;
+}
+.leftButton{
+  text-align: right;
+  grid-column-start: 1;
+grid-column-end: span 1;
+grid-row-start: 2;
+grid-row-end: span 1;
+}
+.rightButton{
+  text-align: left;
+  grid-column-start: 2;
+grid-column-end: span 1;
+grid-row-start: 2;
+grid-row-end: span 1;
+}
+
+.centerButton{
+  background-color: green;
+}
+
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: grey;
+}
